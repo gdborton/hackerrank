@@ -1,7 +1,11 @@
+/**
+ * https://www.hackerrank.com/challenges/bday-gift
+ */
+
 var solver = {
     solve: function (inputString) {
         var balls = solver.parse(inputString);
-        var ballIndex = 0;
+        var ballIndex;
         var result = 0;
         for (ballIndex = 0; ballIndex < balls.length; ballIndex++) {
             result = result + +balls[ballIndex];
